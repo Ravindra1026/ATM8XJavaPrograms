@@ -2,8 +2,19 @@ package Tasks.ts_25092024;
 
 public class Task3_PrimeNumbers {
     public static void main(String[] args) {
-        //prime no:
-        //should be grater 1
 
+        for(int num =2; num<=100; num++){
+            boolean isprime = true;
+
+            for(int i = 2; i<=num/2; i++){
+                if( num % i == 0){
+                    isprime = false;
+                    break;
+                }
+            }
+            if(isprime){
+                System.out.print( num + " ");
+            }
+        }
     }
 }
